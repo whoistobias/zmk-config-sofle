@@ -7,8 +7,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+// #include <dt-bindings/zmk/outputs.h>
 // #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
 // #include <dt-bindings/zmk/rgb.h>
 // #include <dt-bindings/zmk/ext_power.h>
 
@@ -99,11 +99,11 @@
 // | LCTRL      |               |     |     | DESKTOP LEFT | DESKTOP RIGHT |        |  |       |       |      |     |  <  |  >  | ENTER |
 //                              | GUI | ALT | CTRL         | LOWER         | LSHIFT |  | SPACE | RAISE | CTRL | ALT | GUI |
             bindings = <
-&trans   &kp EXCL     &kp AT       &kp HASH      &kp DLLR       &kp PRCNT                   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
-&alt_tab &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_CLR                  &kp GRAVE &kp MINUS &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
-&kp BSPC &none        &none        &none         &none          &none                       &kp TILDE &kp EQUAL &none     &kp LBKT &kp RBKT &kp BSLH
-&trans   &none        &none        &desktop_left &desktop_right &none      &none     &none  &none     &none     &none     &kp LT   &kp GT   &trans  
-                      &trans       &trans        &trans         &trans     &trans    &trans &trans    &trans    &trans    &trans
+&trans   &kp EXCL &kp AT &kp HASH      &kp DLLR       &kp PRCNT                   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
+&alt_tab &none    &none  &none         &none          &none                  &kp GRAVE &kp MINUS &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
+&kp BSPC &none    &none  &none         &none          &none                       &kp TILDE &kp EQUAL &none     &kp LBKT &kp RBKT &kp BSLH
+&trans   &none    &none  &desktop_left &desktop_right &none      &none     &none  &none     &none     &none     &kp LT   &kp GT   &trans  
+                  &trans &trans        &trans         &trans     &trans    &trans &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
