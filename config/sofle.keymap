@@ -95,7 +95,7 @@
 // LOWER------------------------------------------------------------------------------------------------------
 // |  ESC       |  !            |  @  |  #  |  $           |  %            |                   |  ^    |  &   |  *  |  (  |  )  | BKSPC |
 // |  TAB       | TOGGLE OUTPUT | BT1 | BT2 | BT3          | BT CLEAR      |                   |  `    |  -   |  +  |  {  |  }  | F12   |
-// |  BACKSPACE |               |     |     |              |               |                   |  ~    |  =   |     |  (  |  )  |  \    |
+// |  BACKSPACE |               |     |     |              |               |                   |  ~    |  =   |     |  [  |  ]  |  \    |
 // | LCTRL      |               |     |     | DESKTOP LEFT | DESKTOP RIGHT |        |  |       |       |      |     |  <  |  >  | ENTER |
 //                              | GUI | ALT | CTRL         | LOWER         | LSHIFT |  | SPACE | RAISE | CTRL | ALT | GUI |
             bindings = <
@@ -164,16 +164,16 @@
         game_extra_layer {
 // GAME_EXTRA------------------------------------------------------------------------------------------------------
 // |     |     |     |     |     |     |                |     |     |     |     |     |     |
-// |     | F1  | F2  | F3  | F4  |     |                |     |     |     |     |     |     |
-// |     | F5  | F6  | F7  | F8  |     |                |     |     |     |     |     |     |
-// |     | F9  | F10 | F11 | F12 |     |     |    |     |     |     |     |     |     |     |
+// |     | F1  | F2  | F3  | F4  |  [  |                |     |     |     |     |     |     |
+// |     | F5  | F6  | F7  | F8  |  ]  |                |     |     |     |     |     |     |
+// |     | F9  | F10 | F11 | F12 |  /  |     |    |     |     |     |     |     |     |     |
 //             |     |     |     |     |     |    |     |     |     |     |     |
             bindings = <
-&none &none  &none   &none   &none   &none                   &none  &none  &none  &none  &none &none
-&none &kp F1 &kp F2  &kp F3  &kp F4  &none                   &none  &none  &none  &none  &none &none
-&none &kp F5 &kp F6  &kp F7  &kp F8  &none                   &none  &none  &none  &none  &none &none
-&none &kp F9 &kp F10 &kp F11 &kp F12 &none  &none     &none  &none  &none  &none  &none  &none &none
-             &trans  &trans  &trans  &trans &trans    &trans &trans &trans &trans &trans
+&none &none  &none   &none   &none   &none                      &none  &none  &none  &none  &none &none
+&none &kp F1 &kp F2  &kp F3  &kp F4  &kp LBKT                   &none  &none  &none  &none  &none &none
+&none &kp F5 &kp F6  &kp F7  &kp F8  &kp RBKT                   &none  &none  &none  &none  &none &none
+&none &kp F9 &kp F10 &kp F11 &kp F12 &kp FSLH  &none     &none  &none  &none  &none  &none  &none &none
+             &trans  &trans  &trans  &trans    &trans    &trans &trans &trans &trans &trans
             >;
         };
 
