@@ -1,0 +1,20 @@
+#include <behaviors.dtsi>
+
+#include "mouse.h"
+
+/ {
+	behaviors {
+		inc_dec_mwh: behavior_sensor_rotate_mouse_wheel {
+			compatible = "zmk,behavior-sensor-rotate-var";
+			label = "ENC_MOUSE_WHEEL";
+			#sensor-binding-cells = <2>;
+         	bindings = <&mwh>, <&mwh>;
+		};
+	};
+};
+
+&mwh {
+    delay-ms = <U_MOUSE_SCROLL_DELAY>;
+    acceleration-exponent = <U_MOUSE_SCROLL_EXPONENT>;
+    time-to-max-speed-ms = <U_MOUSE_SCROLL_TIME>;
+};
