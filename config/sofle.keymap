@@ -89,7 +89,7 @@
                  &none  &kp LGUI &kp LALT &mo LOWER &kp LSHIFT    &kp SPACE &mo RAISE &kp RCTRL &kp RALT  &tog GAME 
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp MOVE_Y(-5) MOVE_Y(5)>;
         };
 
         lower_layer {
