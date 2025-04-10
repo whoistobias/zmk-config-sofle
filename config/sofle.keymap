@@ -74,7 +74,7 @@
 		scroll_encoder: scroll_encoder {
 			compatible = "zmk,behavior-sensor-rotate";
 			#sensor-binding-cells = <0>;
-			bindings = <&msc MOVE_Y(-5)>, <&msc MOVE_Y(5)>;
+			bindings = <&msc>, <&msc>;
 		};
 	};
 	
@@ -97,7 +97,7 @@
 			&none  &kp LGUI &kp LALT &mo LOWER &kp LSHIFT    &kp SPACE &mo RAISE &kp RCTRL &kp RALT  &tog GAME
 			>;
 			
-			sensor-bindings = <&scroll_encoder>;
+			sensor-bindings = <&scroll_encoder MOVE_Y(-5) MOVE_Y(5)>;
 		};
 		
 		lower_layer {
@@ -115,7 +115,7 @@
 			&trans &trans        &trans         &trans     &trans    &trans &trans    &trans    &trans    &trans
 			>;
 			
-			sensor-bindings = <&scroll_encoder>;
+			sensor-bindings = <&scroll_encoder MOVE_Y(-5) MOVE_Y(5)>;
 		};
 		
 		raise_layer {
@@ -133,7 +133,7 @@
 			&trans &trans &trans &trans &trans    &trans &trans   &trans   &trans   &trans
 			>;
 			
-			sensor-bindings = <&scroll_encoder>;
+			sensor-bindings = <&scroll_encoder MOVE_Y(-5) MOVE_Y(5)>;
 		};
 		
 		adjust_layer {
@@ -167,7 +167,7 @@
 			&kp P  &none  &mo GAME_EXTRA &kp LALT &kp SPACE     &kp SPACE  &mo RAISE &kp RCTRL &kp RALT  &tog GAME
 			>;
 			
-			sensor-bindings = <&scroll_encoder>;
+			sensor-bindings = <&scroll_encoder MOVE_Y(-5) MOVE_Y(5)>;
 		};
 		
 		game_extra_layer {
@@ -185,7 +185,7 @@
 			&trans  &trans  &trans  &trans    &trans    &trans &trans &trans &trans &trans
 			>;
 			
-			sensor-bindings = <&scroll_encoder>;
+			sensor-bindings = <&scroll_encoder MOVE_Y(-5) MOVE_Y(5)>;
 		};
 		
 	};
