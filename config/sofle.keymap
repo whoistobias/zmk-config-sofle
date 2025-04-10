@@ -97,7 +97,7 @@
 			&none  &kp LGUI &kp LALT &mo LOWER &kp LSHIFT    &kp SPACE &mo RAISE &kp RCTRL &kp RALT  &tog GAME
 			>;
 			
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder 5 5>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder MOVE_Y(5) 5>;
 		};
 		
 		lower_layer {
