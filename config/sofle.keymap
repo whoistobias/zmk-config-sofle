@@ -72,9 +72,9 @@
 	
 	behaviors {
 		scroll_encoder: scroll_encoder {
-			compatible = "zmk,behavior-sensor-rotate-var";
-			#sensor-binding-cells = <2>;
-			bindings = <&msc>, <&msc>;
+			compatible = "zmk,behavior-sensor-rotate";
+			#sensor-binding-cells = <0>;
+			bindings = <&kp UP_ARROW>, <&kp DOWN_ARROW>;
 		};
 	};
 	
@@ -94,13 +94,14 @@
 			&kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                             &kp Y     &kp U     &kp I     &kp O     &kp P    &kp MINUS
 			&kp SPACE &kp A  &kp S  &kp D    &kp F    &kp G                             &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
 			&kp LCTRL &kp Z  &kp X  &kp C    &kp V    &kp B     &none         &none     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp ENTER
-			&none  &kp LGUI &kp LALT &mo LOWER &kp LSHIFT    &kp SPACE &mo RAISE &kp RCTRL &kp RALT  &tog GAME
+			&msc SCRL_DOWN &kp LGUI &kp LALT &mo LOWER &kp LSHIFT                     &kp SPACE &mo RAISE &kp RCTRL &kp RALT  &tog GAME
 			>;
 			
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
 		};
 		
 		lower_layer {
+			display-name = "Lower";
 			// LOWER------------------------------------------------------------------------------------------------------
 			// |  ESC       |  !            |  @  |  #  |  $           |  %            |                   |  ^    |  &   |  *  |  (  |  )  | BKSPC |
 			// |  TAB       | TOGGLE OUTPUT | BT1 | BT2 | BT3          | BT CLEAR      |                   |  `    |  -   |  +  |  {  |  }  | F12   |
@@ -115,10 +116,11 @@
 			&trans &trans        &trans         &trans     &trans    &trans &trans    &trans    &trans    &trans
 			>;
 			
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
 		};
 		
 		raise_layer {
+			display-name = "Raise";
 			// ------------------------------------------------------------------------------------------------------------
 			// |    |    |     |     |      |       |                   |       |      |      |     |       | DELETE |
 			// | F1 | F2 | F3  | F4  | F5   | F6    |                   | F7    | F8   | F9   | F10 | F11   | F12    |
@@ -133,10 +135,11 @@
 			&trans &trans &trans &trans &trans    &trans &trans   &trans   &trans   &trans
 			>;
 			
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
 		};
 		
 		adjust_layer {
+			display-name = "Adjust"
 			// ADJUST------------------------------------------------------------------------------------------------------
 			// |     |     |     |     |      |       |                   |       |      |     |     |     |     |
 			// |     |     |     |     |      |       |                   |       |      |     |     |     |     |
@@ -153,6 +156,7 @@
 		};
 		
 		game_layer {
+			display-name = "Game";
 			// GAME------------------------------------------------------------------------------------------------------
 			// | ESC    |  1  |  2  |  3  |  4          |  5   |                  |  6  |  7  |  8  |  9  |  0  | BKSPC |
 			// | TAB    |  Q  |  W  |  E  |  R          |  T   |                  |  Y  |  U  |  I  |  O  |  P  |  -    |
@@ -167,10 +171,11 @@
 			&kp P  &none  &mo GAME_EXTRA &kp LALT &kp SPACE     &kp SPACE  &mo RAISE &kp RCTRL &kp RALT  &tog GAME
 			>;
 			
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
 		};
 		
 		game_extra_layer {
+			display-name = "Game Extra";
 			// GAME_EXTRA------------------------------------------------------------------------------------------------------
 			// |     |     |     |     |     |     |                |     |     |     |     |     |     |
 			// |     | F1  | F2  | F3  | F4  |  [  |                |     |     |     |     |     |     |
@@ -185,7 +190,7 @@
 			&trans  &trans  &trans  &trans    &trans    &trans &trans &trans &trans &trans
 			>;
 			
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
 		};
 		
 	};
