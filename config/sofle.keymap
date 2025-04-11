@@ -94,7 +94,7 @@
 			&kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                             &kp Y     &kp U     &kp I     &kp O     &kp P    &kp MINUS
 			&kp SPACE &kp A  &kp S  &kp D    &kp F    &kp G                             &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
 			&kp LCTRL &kp Z  &kp X  &kp C    &kp V    &kp B     &none         &none     &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp ENTER
-			&msc SCRL_DOWN &kp LGUI &kp LALT &mo LOWER &kp LSHIFT                     &kp SPACE &mo RAISE &kp RCTRL &kp RALT  &tog GAME
+			&msc MOVE_DOWN &kp LGUI &kp LALT &mo LOWER &kp LSHIFT                     &kp SPACE &mo RAISE &kp RCTRL &kp RALT  &tog GAME
 			>;
 			
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
