@@ -97,7 +97,7 @@
 			&none  &kp LGUI &kp LALT &mo LOWER &kp LSHIFT    &kp SPACE &mo RAISE &kp RCTRL &kp RALT  &tog GAME
 			>;
 			
-			sensor-bindings = < &scroll_encoder MOVE_Y(2000) MOVE_Y(-2000) &scroll_encoder MOVE_Y(2000) MOVE_Y(-2000)>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 		
 		lower_layer {
@@ -115,7 +115,7 @@
 			&trans &trans        &trans         &trans     &trans    &trans &trans    &trans    &trans    &trans
 			>;
 			
-			sensor-bindings = < &scroll_encoder MOVE_Y(2000) MOVE_Y(-2000) &scroll_encoder MOVE_Y(2000) MOVE_Y(-2000)>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 		
 		raise_layer {
@@ -133,7 +133,7 @@
 			&trans &trans &trans &trans &trans    &trans &trans   &trans   &trans   &trans
 			>;
 			
-			sensor-bindings = < &scroll_encoder MOVE_Y(2000) MOVE_Y(-2000) &scroll_encoder MOVE_Y(2000) MOVE_Y(-2000)>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 		
 		adjust_layer {
@@ -167,7 +167,7 @@
 			&kp P  &none  &mo GAME_EXTRA &kp LALT &kp SPACE     &kp SPACE  &mo RAISE &kp RCTRL &kp RALT  &tog GAME
 			>;
 			
-			sensor-bindings = < &scroll_encoder MOVE_Y(2000) MOVE_Y(-2000) &scroll_encoder MOVE_Y(2000) MOVE_Y(-2000)>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 		
 		game_extra_layer {
@@ -185,7 +185,7 @@
 			&trans  &trans  &trans  &trans    &trans    &trans &trans &trans &trans &trans
 			>;
 			
-			sensor-bindings = < &scroll_encoder MOVE_Y(2000) MOVE_Y(-2000) &scroll_encoder MOVE_Y(2000) MOVE_Y(-2000)>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 		
 	};
