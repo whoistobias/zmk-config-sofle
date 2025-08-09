@@ -61,7 +61,7 @@
 			, <&macro_release &kp LALT>
 			;
 		};
-		shift_tilde: shift_grave {
+		shift_grave: shift_grave {
 			label = "ZM_shift_grave";
 			wait-ms = <0>;
 			tap-ms = <0>;
