@@ -61,6 +61,18 @@
 			, <&macro_release &kp LALT>
 			;
 		};
+		shift_tilde: shift_grave {
+			label = "ZM_shift_grave";
+			wait-ms = <0>;
+			tap-ms = <0>;
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+			= <&macro_press &kp LSHIFT>
+			, <&macro_tap &kp GRAVE>
+			, <&macro_release &kp LSHIFT>
+			;
+		};
 	};
 	
 	// Activate ADJUST layer by pressing raise and lower
@@ -112,11 +124,11 @@
 			// | LCTRL      |               |     |     | DESKTOP LEFT | DESKTOP RIGHT |        |  |       |       |      |     |  <  |  >  | ENTER |
 			//                              | GUI | ALT | CTRL         | LOWER         | LSHIFT |  | SPACE | RAISE | CTRL | ALT | GUI |
 			bindings = <
-			&trans   &kp EXCL &kp AT &kp HASH      &kp DLLR       &kp PRCNT                   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
-			&alt_tab &none    &none  &none         &none          &none                  &kp GRAVE &kp MINUS &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
-			&kp BSPC &none    &none  &none         &none          &none                       &kp TILDE &kp EQUAL &none     &kp LBKT &kp RBKT &kp BSLH
-			&trans   &none    &none  &desktop_left &desktop_right &none      &none     &none  &none     &none     &none     &kp LT   &kp GT   &trans
-			&trans &trans        &trans         &trans     &trans    &trans &trans    &trans    &trans    &trans
+			&trans   &kp EXCL &kp AT       &kp HASH      &kp DLLR       &kp PRCNT                   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
+			&alt_tab &none    &none        &none         &none          &none                       &kp GRAVE &kp MINUS &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
+			&kp BSPC &none    &none        &none         &none          &none                       &kp TILDE &kp EQUAL &none     &kp LBKT &kp RBKT &kp BSLH
+			&trans   &none    &none        &desktop_left &desktop_right &none     &none     &none   &none     &none     &none     &kp LT   &kp GT   &trans
+			&shift_grave &trans        &trans         &trans    &trans    &trans  &trans    &trans    &trans    &trans
 			>;
 			
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
@@ -190,7 +202,7 @@
 			&none &kp F1 &kp F2  &kp F3  &kp F4  &kp LBKT                   &none  &none  &none  &none  &none &none
 			&none &kp F5 &kp F6  &kp F7  &kp F8  &kp RBKT                   &none  &none  &none  &none  &none &none
 			&none &kp F9 &kp F10 &kp F11 &kp F12 &kp FSLH  &none     &none  &none  &none  &none  &none  &none &none
-			&trans  &trans  &trans  &trans    &trans    &trans &trans &trans &trans &trans
+			&shift_grave  &trans  &trans  &trans    &trans    &trans &trans &trans &trans &trans
 			>;
 			
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
