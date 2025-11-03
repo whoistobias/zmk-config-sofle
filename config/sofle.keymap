@@ -113,8 +113,8 @@
 			//                              | GUI | ALT | CTRL         | LOWER         | LSHIFT |  | SPACE | RAISE | CTRL | ALT | GUI |
 			bindings = <
 			&trans   &kp EXCL &kp AT       &kp HASH &kp DLLR &kp PRCNT                         &kp CARET &kp AMPS     &kp ASTRK   &kp LPAR &kp RPAR &trans
-			&alt_tab &none    &none        &none    &none    &none                             &kp GRAVE &kp KP_MINUS &kp KP_PLUS &kp LBRC &kp RBRC &kp PIPE
-			&kp BSPC &none    &none        &none    &none    &none                             &kp TILDE &kp KP_EQUAL &none       &kp LBKT &kp RBKT &kp BSLH
+			&alt_tab &none    &none        &none    &none    &none                             &kp GRAVE &kp MINUS &kp PLUS &kp LBRC &kp RBRC &kp PIPE
+			&kp BSPC &none    &none        &none    &none    &none                             &kp TILDE &kp EQUAL &none       &kp LBKT &kp RBKT &kp BSLH
 			&trans   &none    &none        &none    &none    &none     &none           &none   &none     &none        &none       &kp LT   &kp GT   &trans
 			&shift_grave &trans   &trans   &trans    &trans          &trans  &trans    &trans       &trans      &trans
 			>;
