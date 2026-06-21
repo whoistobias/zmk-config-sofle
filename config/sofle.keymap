@@ -107,9 +107,9 @@
 			display-name = "Lower";
 			// LOWER------------------------------------------------------------------------------------------------------
 			// |  ESC       |  !            |  @  |  #  |  $           |  %            |                   |  ^    |  &   |  *  |  (  |  )  | BKSPC |
-			// |  TAB       | TOGGLE OUTPUT | BT1 | BT2 | BT3          | BT CLEAR      |                   |  `    |  -   |  +  |  {  |  }  | F12   |
+			// |  ALT TAB   |               |     |     |              |               |                   |  `    |  -   |  +  |  {  |  }  | F12   |
 			// |  BACKSPACE |               |     |     |              |               |                   |  ~    |  =   |     |  [  |  ]  |  \    |
-			// | LCTRL      |               |     |     | DESKTOP LEFT | DESKTOP RIGHT |        |  |       |       |      |     |  <  |  >  | ENTER |
+			// | LCTRL      |               |     |     |              |               |        |  |       |       |      |     |  <  |  >  | ENTER |
 			//                              | GUI | ALT | CTRL         | LOWER         | LSHIFT |  | SPACE | RAISE | CTRL | ALT | GUI |
 			bindings = <
 			&trans   &kp EXCL &kp AT       &kp HASH &kp DLLR &kp PRCNT                         &kp CARET &kp AMPS     &kp ASTRK   &kp LPAR &kp RPAR &trans
